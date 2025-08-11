@@ -11,20 +11,20 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{69DA6942-04E5-4D04-98A2-5C86EEA79DF9}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{10142392-59B0-4A86-A891-3844DCED0651}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Execute Package Task"
+      DTS:refId="Package\Execute DimChunk"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{625449FC-12B2-4CFF-84E5-2B7C8192057F}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Package Task"
+      DTS:ObjectName="Execute DimChunk"
       DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -35,13 +35,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute Package Task 1"
+      DTS:refId="Package\Execute DimProduct"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{A7F56550-057D-46C0-9267-6E61C399E5B5}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Package Task 1"
+      DTS:ObjectName="Execute DimProduct"
       DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -52,13 +52,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute Package Task 2"
+      DTS:refId="Package\Execute DimRegion"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{895D5025-3154-4FA8-98F3-F8334A2449E5}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Package Task 2"
+      DTS:ObjectName="Execute DimRegion"
       DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -69,13 +69,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute Package Task 3"
+      DTS:refId="Package\Execute DimState"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{5CD1B2D9-7C94-4D62-8081-CFEF8A22132B}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Package Task 3"
+      DTS:ObjectName="Execute DimState"
       DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -86,13 +86,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute Package Task 4"
+      DTS:refId="Package\Execute FactSales"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{1ED07AD0-6E51-4180-8D39-4501D2E63C0E}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Package Task 4"
+      DTS:ObjectName="Execute FactSales"
       DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -108,34 +108,34 @@
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
       DTS:DTSID="{B4C5EA1B-B902-4CA3-9119-38F836547FC2}"
-      DTS:From="Package\Execute Package Task"
+      DTS:From="Package\Execute DimChunk"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
-      DTS:To="Package\Execute Package Task 1" />
+      DTS:To="Package\Execute DimProduct" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
       DTS:DTSID="{D94D42AD-9639-48C5-9573-0B22CE56B631}"
-      DTS:From="Package\Execute Package Task 1"
+      DTS:From="Package\Execute DimProduct"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
-      DTS:To="Package\Execute Package Task 2" />
+      DTS:To="Package\Execute DimRegion" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
       DTS:CreationName=""
       DTS:DTSID="{FE8149BE-AB3F-4E15-AC71-40F352F1C97D}"
-      DTS:From="Package\Execute Package Task 2"
+      DTS:From="Package\Execute DimRegion"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 2"
-      DTS:To="Package\Execute Package Task 3" />
+      DTS:To="Package\Execute DimState" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
       DTS:CreationName=""
       DTS:DTSID="{B8DFD48C-679B-43C9-834F-448269AB1631}"
-      DTS:From="Package\Execute Package Task 3"
+      DTS:From="Package\Execute DimState"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 3"
-      DTS:To="Package\Execute Package Task 4" />
+      DTS:To="Package\Execute FactSales" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -150,27 +150,39 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\Execute Package Task"
+          Size="167.2,41.6"
+          Id="Package\Execute DimChunk"
           TopLeft="39.6666647998823,75.699999511838" />
         <NodeLayout
           Size="192.8,41.6"
-          Id="Package\Execute Package Task 1"
+          Id="Package\Execute DimProduct"
           TopLeft="277.166653462583,73.6333330681589" />
+        <NodeLayout
+          Size="192.8,41.6"
+          Id="Package\Execute DimRegion"
+          TopLeft="554.999969676138,70.199999511838" />
+        <NodeLayout
+          Size="192.8,41.6"
+          Id="Package\Execute DimState"
+          TopLeft="560.499972954394,179.033332543837" />
+        <NodeLayout
+          Size="192.8,41.6"
+          Id="Package\Execute FactSales"
+          TopLeft="286.33332290666,183.033332724637" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="224.466664799882,95.4666662899984">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="52.6999886627003,0"
+              EndConnector="52.6999886627007,0"
               Start="0,0"
-              End="45.1999886627003,0">
+              End="45.1999886627007,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="45.1999886627003,0" />
+                    End="45.1999886627007,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -179,10 +191,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="192.8,41.6"
-          Id="Package\Execute Package Task 2"
-          TopLeft="554.999969676138,70.199999511838" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
           TopLeft="469.966653462583,92.7166662899984">
@@ -205,10 +213,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="192.8,41.6"
-          Id="Package\Execute Package Task 3"
-          TopLeft="560.499972954394,179.033332543837" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
           TopLeft="654.149971315266,111.799999511838">
@@ -231,10 +235,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="192.8,41.6"
-          Id="Package\Execute Package Task 4"
-          TopLeft="286.33332290666,183.033332724637" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
           TopLeft="560.499972954394,201.833332634237">

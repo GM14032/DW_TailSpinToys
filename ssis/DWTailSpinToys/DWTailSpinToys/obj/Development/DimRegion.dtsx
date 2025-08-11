@@ -11,8 +11,8 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{7AA17993-6471-42F8-830A-15681959E22C}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{379CBC16-0D62-47D5-90EE-77FA96F439A5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACDSN2vAgHhUPcOxy85JvKCt9J51lB/RwkfjOxQe1KsFgAAAAAOgAAAAAIAACAAAAALTVJtxBWyfrWY1kaGoyD9SxSSY6ggNVRQHD88jfscKSAAAADlFp2vFndzrn7MpO2TzEXsIMS8CJ6dBZ3Ul+Dl72tBbUAAAADqKCzWz/ZBEnjorLn7JqrMrvczprC7Mptr0sjYdepFlhDPu6c6dbfBQjk1o3P3uvh0sNv+4hZQ1ijRAFz+J4Md</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADKO8nx4asL1ER6xiZdeKnk2qjHdljMFvyMRH9jERXgOQAAAAAOgAAAAAIAACAAAAAUMXXmFJ5V+4HmX0NSeJWOZAtqExAPmec7SqfdD/JI0SAAAADR+DD88ioL4KBMiwRUVQQawjWgtJGDfixBrRSeB2RYQEAAAAA3ZRGPMfsVO4PM9gnuwWxkZpGaPiXU6Bw1a8UiVZA1cxQZG/VIqrAr5Ql+AMqfkP4nyzoAu1R7RmnCAh8+X9Wd</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADJ7GMTUhiFEKewrkq2/zIuN8wIL9EIVx8GQrDoqzARcwAAAAAOgAAAAAIAACAAAAAB6UmaVdmSD0CkCOjnn3pxmYSMg3Z9fWBu2nJLaFNJdCAAAAAQqDRfASh/I41+Joc3l5uR1hzjVFgIXA8BppuvmEJgBUAAAADKFPvfFLuN0Os18AhMXg4boba2N34JQVpaV/sqIXdFRG6M5Z98GF2jgDAHqdeh2kSTL+3s+nFCT4cws9ncbztI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACVyNo8x6jabKmOUzrPeD3OF1aQE2qxm/2B4RIXiLHUtQAAAAAOgAAAAAIAACAAAACJli6kdb96ogSIDGj/qx2FTLWP8Z5X8vfa6l3zKaFrPSAAAADQX7s2a1JyAR04FMhCUAbp0QvP01qJ3zN2BHEtuqIwlUAAAADW0MFYWpckU7w0OBCJXEDz7YemLsaUZQfRS0vOPFIpn3gHE+njUPTrpvjKBJzf9DUqslcLY0Mc+ohtJDqjWPi5</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,13 +50,30 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Clear DimRegion"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{8DEE335F-57A5-4BDE-9740-1149F3E091F9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Clear DimRegion"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{37CA58E5-1E81-4B06-8C22-EF620EC520D4}"
+          SQLTask:SqlStatementSource="delete DimRegion;&#xA;DBCC CHECKIDENT('DimRegion', RESEED, 0);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Region"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{F8743AFC-28C5-4898-A5B2-F5E6C94A4A14}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Load Region"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -64,11 +81,11 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Destino de ADO NET"
+              refId="Package\Load Region\Destination DimRegion"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
-              name="Destino de ADO NET"
+              name="Destination DimRegion"
               usesDispositions="true"
               version="2">
               <properties>
@@ -99,7 +116,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Destino de ADO NET.Connections[IDbConnection]"
+                  refId="Package\Load Region\Destination DimRegion.Connections[IDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa1]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa1]"
                   description="Administrador de conexiones administrado"
@@ -107,62 +124,62 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[RegionName]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].Columns[RegionName]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="RegionName"
-                      externalMetadataColumnId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionName]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[RegionName]" />
+                      externalMetadataColumnId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionName]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[RegionName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[StartDate]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].Columns[StartDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="StartDate"
-                      externalMetadataColumnId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[StartDate]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[StartDate]" />
+                      externalMetadataColumnId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[StartDate]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[StartDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[CurrentFlag]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].Columns[CurrentFlag]"
                       cachedDataType="i4"
                       cachedName="CurrentFlag"
-                      externalMetadataColumnId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[CurrentFlag]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]" />
+                      externalMetadataColumnId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[CurrentFlag]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[RegionId]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].Columns[RegionId]"
                       cachedDataType="i4"
                       cachedName="RegionId"
-                      externalMetadataColumnId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionID_BK]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[RegionId]" />
+                      externalMetadataColumnId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionID_BK]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[RegionId]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionSK]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionSK]"
                       dataType="i4"
                       name="RegionSK" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionID_BK]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionID_BK]"
                       dataType="i4"
                       name="RegionID_BK" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionName]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionName]"
                       dataType="wstr"
                       length="50"
                       name="RegionName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[StartDate]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[StartDate]"
                       dataType="dbTimeStamp"
                       name="StartDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[EndDate]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[EndDate]"
                       dataType="dbTimeStamp"
                       name="EndDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[CurrentFlag]"
+                      refId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET].ExternalColumns[CurrentFlag]"
                       dataType="bool"
                       name="CurrentFlag" />
                   </externalMetadataColumns>
@@ -170,22 +187,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Load Region\Destination DimRegion.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Load Region\Destination DimRegion.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Load Region\Destination DimRegion.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Load Region\Destination DimRegion.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Load Region\Destination DimRegion.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -194,11 +211,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Origen de ADO NET"
+              refId="Package\Load Region\Source Region"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
-              name="Origen de ADO NET"
+              name="Source Region"
               usesDispositions="true"
               version="4">
               <properties>
@@ -238,7 +255,7 @@ FROM dbo.Region;</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Origen de ADO NET.Connections[IDbConnection]"
+                  refId="Package\Load Region\Source Region.Connections[IDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.TailspinToys2020.sa1]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.TailspinToys2020.sa1]"
                   description="Administrador de conexiones administrado"
@@ -246,104 +263,104 @@ FROM dbo.Region;</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET]"
+                  refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET]"
                   name="Salida de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[RegionId]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[RegionId]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionId]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[RegionId]"
+                      externalMetadataColumnId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionId]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[RegionId]"
                       name="RegionId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[RegionName]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[RegionName]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionName]"
+                      externalMetadataColumnId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionName]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[RegionName]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[RegionName]"
                       name="RegionName"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
+                      externalMetadataColumnId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
                       name="StartDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[CurrentFlag]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]"
+                      externalMetadataColumnId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].ExternalColumns[CurrentFlag]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]"
                       name="CurrentFlag"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionId]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionId]"
                       dataType="i4"
                       name="RegionId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionName]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionName]"
                       dataType="wstr"
                       length="50"
                       name="RegionName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
                       dataType="dbTimeStamp"
                       name="StartDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[CurrentFlag]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET].ExternalColumns[CurrentFlag]"
                       dataType="i4"
                       name="CurrentFlag" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET]"
+                  refId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET]"
                   isErrorOut="true"
                   name="Salida de error de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[RegionId]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[RegionId]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[RegionId]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[RegionId]"
                       name="RegionId" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[RegionName]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[RegionName]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[RegionName]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[RegionName]"
                       name="RegionName" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
                       name="StartDate" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[CurrentFlag]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[CurrentFlag]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[CurrentFlag]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[CurrentFlag]"
                       name="CurrentFlag" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Load Region\Source Region.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -354,29 +371,12 @@ FROM dbo.Region;</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
-              endId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Load Region.Paths[Salida de origen de ADO NET]"
+              endId="Package\Load Region\Destination DimRegion.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de ADO NET"
-              startId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET]" />
+              startId="Package\Load Region\Source Region.Outputs[Salida de origen de ADO NET]" />
           </paths>
         </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Limpiar DimRegion"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{8DEE335F-57A5-4BDE-9740-1149F3E091F9}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Limpiar DimRegion"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{37CA58E5-1E81-4B06-8C22-EF620EC520D4}"
-          SQLTask:SqlStatementSource="delete DimRegion;&#xA;DBCC CHECKIDENT('DimRegion', RESEED, 0);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -385,10 +385,10 @@ FROM dbo.Region;</property>
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
       DTS:DTSID="{6BB3BF49-39E0-4A5D-A116-AD7CFBE145C4}"
-      DTS:From="Package\Limpiar DimRegion"
+      DTS:From="Package\Clear DimRegion"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Load Region" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -403,27 +403,27 @@ FROM dbo.Region;</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task"
+          Size="137.6,41.6"
+          Id="Package\Load Region"
           TopLeft="286.333319628405,98.7666662267182" />
         <NodeLayout
-          Size="167.2,41.6"
-          Id="Package\Limpiar DimRegion"
+          Size="157.6,41.6"
+          Id="Package\Clear DimRegion"
           TopLeft="20.4999991804362,102.566665991677" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="187.699999180436,121.466666109198">
+          TopLeft="178.099999180436,121.466666109198">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="98.6333204479686,0"
+              EndConnector="108.233320447969,0"
               Start="0,0"
-              End="91.1333204479686,0">
+              End="100.733320447969,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="91.1333204479686,0" />
+                    End="100.733320447969,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -436,32 +436,32 @@ FROM dbo.Region;</property>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Load Region">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172.8,41.6"
-          Id="Package\Data Flow Task\Origen de ADO NET"
+          Size="147.2,41.6"
+          Id="Package\Load Region\Source Region"
           TopLeft="38.833333151208,68.433333104319" />
         <NodeLayout
-          Size="176.8,41.6"
-          Id="Package\Data Flow Task\Destino de ADO NET"
+          Size="184.8,41.6"
+          Id="Package\Load Region\Destination DimRegion"
           TopLeft="388.833312388924,65.2999995841583" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
-          TopLeft="211.633333151208,87.6666663442386">
+          Id="Package\Load Region.Paths[Salida de origen de ADO NET]"
+          TopLeft="186.033333151208,87.6666663442386">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="177.199979237716,0"
+              EndConnector="202.799979237716,0"
               Start="0,0"
-              End="169.699979237716,0">
+              End="195.299979237716,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="169.699979237716,0" />
+                    End="195.299979237716,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -474,7 +474,7 @@ FROM dbo.Region;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Destino de ADO NET">
+    design-time-name="Package\Load Region\Destination DimRegion">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -482,7 +482,7 @@ FROM dbo.Region;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Origen de ADO NET">
+    design-time-name="Package\Load Region\Source Region">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

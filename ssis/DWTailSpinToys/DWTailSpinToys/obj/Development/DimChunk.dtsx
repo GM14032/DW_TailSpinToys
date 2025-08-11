@@ -11,8 +11,8 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{35B1248C-C019-4E5D-A2B2-7439450D40DE}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{64C022EB-C8D3-4A28-AE62-209141A6F1B0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAY9/DQiAESZTPdXpGqg6KtuCEqZx/nQNNYFWW8F8krMwAAAAAOgAAAAAIAACAAAABmZyYR4FH1TVVH+87FQpZzzT4XCV5i4mWDXZ+8RTEO9yAAAAC9vkQpszkj/TbeV+Oz5jtEbzn5iJFte0lR0saxmQNUiEAAAABFwwiqW1UReYv1+ss7vfU2LobjW8JOh693Y0wdDGhuLySlV9SaL9rsIVb58qXZ3fqa/ecxNkuw5C4S7O1Vp+3n</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxDntJ2sfNL11DD0Ij4REkSM9Y2t65uLRzuHQ+F7k+5gAAAAAOgAAAAAIAACAAAAC+r+P2XM4W3T9aBcu6fGfClw2FvMhu38nPZzvl5l366iAAAAAl9NwAQj6dy/7PyVbMgBsPKIL0e8c3yXpE/2XaaWnaV0AAAAA6a8ooOKcj6l9ZPw9d0WcQhiUH98QTtRoiSvpjjQDxHBR9s6csvWEA4nRVGfaaCD1esLWEmlOrsvG6xuZhlCMK</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAChFSSUATgSJvphGvRnceSuZcTOw1wjTUrWTtqHACybHwAAAAAOgAAAAAIAACAAAABpk4F7lR/gAoGl64GOBRUwfe99ylQ8+ddgDHuaemk8syAAAABCd/+oDXJlhQR+iLop3fMUcAkqz85yVvXUcQIVJLCr4UAAAABOopBK3cv1J2+S2VnyAuVEQGvF9HDSDMIkva9yqAdGIY+13G2UMcJigVEELtqU6R+Ze1GRpKVFlF5d4/iKBzQu</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACA8xXuHcDGAK/O395+ZpevZMw/c0NWPf/ltACOApfx1AAAAAAOgAAAAAIAACAAAABmVmG1x8FY/oK4HpXply1Pr1ouUJU86UBhjEhn8BUrUCAAAACwwayletcBeBpZ9WAy5H+MIkRHdanc+pvVT83WPpyTQkAAAAA3+o/pvD77309aBgHDX5PrPvRdC4Azn2FQtJ0/M0Ij95FCGnJ0qVL7cRFuNQ/E9xvTHSQf/gaE1O411DwmMGUT</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,13 +50,30 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Clear DimChunk"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{357AEE2C-3129-45DC-A47A-0FE3AC8ADF5B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Clear DimChunk"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{724B283D-C86D-4E9F-B160-C0C1780E4EF2}"
+          SQLTask:SqlStatementSource="delete DimChunk ;&#xA;DBCC CHECKIDENT('DimChunk ', RESEED, 0);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load DimChunk"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{50FCCC31-A32B-4FF5-B36E-BDD50BE73483}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Load DimChunk"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -64,11 +81,11 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Destino de ADO NET"
+              refId="Package\Load DimChunk\Destination DimChunk"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
-              name="Destino de ADO NET"
+              name="Destination DimChunk"
               usesDispositions="true"
               version="2">
               <properties>
@@ -99,7 +116,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Destino de ADO NET.Connections[IDbConnection]"
+                  refId="Package\Load DimChunk\Destination DimChunk.Connections[IDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa1]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa1]"
                   description="Administrador de conexiones administrado"
@@ -107,38 +124,38 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[KitType]"
+                      refId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET].Columns[KitType]"
                       cachedDataType="wstr"
                       cachedLength="3"
                       cachedName="KitType"
-                      externalMetadataColumnId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[KitType]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[KitType]" />
+                      externalMetadataColumnId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET].ExternalColumns[KitType]"
+                      lineageId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].Columns[KitType]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Channels]"
+                      refId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET].Columns[Channels]"
                       cachedDataType="ui1"
                       cachedName="Channels"
-                      externalMetadataColumnId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Channels]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Channels]" />
+                      externalMetadataColumnId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET].ExternalColumns[Channels]"
+                      lineageId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].Columns[Channels]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[ChunkID]"
+                      refId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET].ExternalColumns[ChunkID]"
                       dataType="i4"
                       name="ChunkID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[KitType]"
+                      refId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET].ExternalColumns[KitType]"
                       dataType="wstr"
                       length="3"
                       name="KitType" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Channels]"
+                      refId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET].ExternalColumns[Channels]"
                       dataType="ui1"
                       name="Channels" />
                   </externalMetadataColumns>
@@ -146,22 +163,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Load DimChunk\Destination DimChunk.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Load DimChunk\Destination DimChunk.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Load DimChunk\Destination DimChunk.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Load DimChunk\Destination DimChunk.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Load DimChunk\Destination DimChunk.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -170,11 +187,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Origen de ADO NET"
+              refId="Package\Load DimChunk\Source Product"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
-              name="Origen de ADO NET"
+              name="Source Product"
               usesDispositions="true"
               version="4">
               <properties>
@@ -209,7 +226,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Origen de ADO NET.Connections[IDbConnection]"
+                  refId="Package\Load DimChunk\Source Product.Connections[IDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.TailspinToys2020.sa1]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.TailspinToys2020.sa1]"
                   description="Administrador de conexiones administrado"
@@ -217,68 +234,68 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET]"
+                  refId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET]"
                   name="Salida de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[KitType]"
+                      refId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].Columns[KitType]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[KitType]"
+                      externalMetadataColumnId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[KitType]"
                       length="3"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[KitType]"
+                      lineageId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].Columns[KitType]"
                       name="KitType"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Channels]"
+                      refId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].Columns[Channels]"
                       dataType="ui1"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Channels]"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Channels]"
+                      externalMetadataColumnId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[Channels]"
+                      lineageId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].Columns[Channels]"
                       name="Channels"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[KitType]"
+                      refId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[KitType]"
                       dataType="wstr"
                       length="3"
                       name="KitType" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Channels]"
+                      refId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[Channels]"
                       dataType="ui1"
                       name="Channels" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET]"
+                  refId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET]"
                   isErrorOut="true"
                   name="Salida de error de origen de ADO NET">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[KitType]"
+                      refId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[KitType]"
                       dataType="wstr"
                       length="3"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[KitType]"
+                      lineageId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[KitType]"
                       name="KitType" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Channels]"
+                      refId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[Channels]"
                       dataType="ui1"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Channels]"
+                      lineageId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[Channels]"
                       name="Channels" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Load DimChunk\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -289,29 +306,12 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
-              endId="Package\Data Flow Task\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Load DimChunk.Paths[Salida de origen de ADO NET]"
+              endId="Package\Load DimChunk\Destination DimChunk.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de ADO NET"
-              startId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET]" />
+              startId="Package\Load DimChunk\Source Product.Outputs[Salida de origen de ADO NET]" />
           </paths>
         </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Limpiar DimChunk"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{357AEE2C-3129-45DC-A47A-0FE3AC8ADF5B}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Limpiar DimChunk"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{724B283D-C86D-4E9F-B160-C0C1780E4EF2}"
-          SQLTask:SqlStatementSource="delete DimChunk ;&#xA;DBCC CHECKIDENT('DimChunk ', RESEED, 0);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -320,10 +320,10 @@
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
       DTS:DTSID="{29F3CD11-CD4F-4642-85C4-B58F1749CAA8}"
-      DTS:From="Package\Limpiar DimChunk"
+      DTS:From="Package\Clear DimChunk"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Load DimChunk" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -338,27 +338,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task"
-          TopLeft="356.333315803774,141.233332598077" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Limpiar DimChunk"
+          Size="154.4,41.6"
+          Id="Package\Clear DimChunk"
           TopLeft="54.6666639803185,145.033332363036" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Load DimChunk"
+          TopLeft="356.333315803774,141.233332598077" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="225.066663980319,163.933332480556">
+          TopLeft="209.066663980318,163.933332480557">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="131.266651823455,0"
+              EndConnector="147.266651823456,0"
               Start="0,0"
-              End="123.766651823455,0">
+              End="139.766651823456,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="123.766651823455,0" />
+                    End="139.766651823456,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -371,32 +371,32 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Load DimChunk">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172.8,41.6"
-          Id="Package\Data Flow Task\Origen de ADO NET"
+          Size="149.6,41.6"
+          Id="Package\Load DimChunk\Source Product"
           TopLeft="62.1666652096643,134.299999312957" />
         <NodeLayout
-          Size="176.8,41.6"
-          Id="Package\Data Flow Task\Destino de ADO NET"
+          Size="181.6,41.6"
+          Id="Package\Load DimChunk\Destination DimChunk"
           TopLeft="355.499980876844,133.766665774716" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
-          TopLeft="234.966665209664,154.833332543836">
+          Id="Package\Load DimChunk.Paths[Salida de origen de ADO NET]"
+          TopLeft="211.766665209664,154.833332543836">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="120.53331566718,0"
+              EndConnector="143.73331566718,0"
               Start="0,0"
-              End="113.03331566718,0">
+              End="136.23331566718,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="113.03331566718,0" />
+                    End="136.23331566718,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -409,7 +409,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Destino de ADO NET">
+    design-time-name="Package\Load DimChunk\Destination DimChunk">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -417,7 +417,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Origen de ADO NET">
+    design-time-name="Package\Load DimChunk\Source Product">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

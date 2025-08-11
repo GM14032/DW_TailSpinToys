@@ -11,8 +11,8 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="product"
   DTS:PackageType="5"
-  DTS:VersionBuild="49"
-  DTS:VersionGUID="{80675E55-B60B-42DD-9C49-CB3033B3B599}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{10043278-444C-4E1C-BF92-EA2913CBD2DD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC/C+tFXVcrLs1czE2O1fKn+HloV2SjlF4ZD8GlBGotBAAAAAAOgAAAAAIAACAAAADnUI5pqUpO5uY+RmscoTZvRl++efmeCz9b8XWUzzj/RiAAAABeeBVOqdbo9QZCW8iGJSCVlksMXMy9JqnPPNui+6HIXEAAAABqLmcu87c4lkoIuLCTK3GTfMexMxRShx8ylM6bkM7A9BxWomr0Emi5NHW9UVbuVgGxGal6KXM6b0BqfqFVTLIr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC5Jp+ydIRaWqKKfF9BMrXzziZjhUhP2yY9jI3yFs3t8wAAAAAOgAAAAAIAACAAAACRMln8ubbSqA25Du+qO1nblFEhiztKk7XAPUWQh9hWUyAAAADrR57cf2J2RakHmPRC11+Q9C5qrv9t2aWXhVS9z2j+rUAAAABNL/Y0EF2q0UWG0VzUrOnkvMdaKxRHBrvlGt56xGcHLkBHUN9KB5E3Ovus4LJyZJ+d2Izt9wQ9JiYfduiOYyAP</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -44,7 +44,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAltl+QMfBTPFhuuwWDbcNI+B4hE+wo3zQ4DVYG0zh4gQAAAAAOgAAAAAIAACAAAAAbWffzMtFsHxN8UILUroH8tgVt6BwGmAqj/Q1tY0pG2yAAAACOL9iHV3815pDLdaQ5j8+w/88JEIvs3PqCm7kblYzl6kAAAADOzN5RjQwwBtu9RnqWroPjwepwJsQ5QTAdpolofUTjIGiDQcs1MA5Nzrf58ElIRd7gykzCc1jVM45D1/0ByRbl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADF9MLjDD72n7uY65ns4L63qLy7yUWoN8BbaXk0ChzCXgAAAAAOgAAAAAIAACAAAAA/LGz1eFhdGWNyMWe4xIgnihPACJWs66kb2/kowMVikiAAAACik7tuL++sbsfJaPw7A3dKsSJKn2sNeZBLAWkeAUx/lUAAAAASkfSX7MRh+ZPqVkTAFY1y9bA7oqVZBAvk/7x9BoPz1jNez/ClTIMSDsNpI5VEk5NblwS1YW9oCkyswW7gObZr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -59,7 +59,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABtabNILRRxnnFaVswI3xLVY6g61IVp7W20gijpFPLnjgAAAAAOgAAAAAIAACAAAAB2J2H6Dal9SaqIBdjUOtORJVRFGP8lfdCTjku2BnFoiCAAAAARxpg9RoSN4gLwgZXzOhb88eyxyCyj0EL0T51jFxHRFUAAAABXfR4sahWfFc65OP+KrAGZTgHGIFUnWD2oEwzvK/vABD1sXDeOaBrcS5220YLbLx6GkPs+H8P3yHgrjv25JupN</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABwqZjVl5Km0JYcapsQk+u1napgSbnkm68Eac83FKbczwAAAAAOgAAAAAIAACAAAAB9k2CFDqnNdDy5yUiFs7OogJejTOs2jooiWd4EAHUxICAAAADukQJdfeFmpLDf8GHGZ/x7xMVv52n85sjFV+d5ixD2NEAAAABUsCpfoEmwP1KZIF7+EDFf8C3X0L6FC7rGJKAHl+naGGbm19eKLwjtysfFjDPyx9id+Rc3w8xEd+IPvrSgAa4M</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -67,13 +67,31 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Clear DimProduct"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{1EA86F3E-AE17-4D0B-9A24-C882BC4A381E}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Clear DimProduct"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{93E4358D-B22A-49C6-9872-606453471614}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="delete DimProduct;&#xA;DBCC CHECKIDENT('DimProduct', RESEED, 0);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Product"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{0E081817-0095-463B-A06A-770B9C82176E}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Load Product"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -81,11 +99,11 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\DimProduct"
+              refId="Package\Load Product\Destination DimProduct"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
-              name="DimProduct"
+              name="Destination DimProduct"
               usesDispositions="true"
               version="2">
               <properties>
@@ -116,7 +134,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\DimProduct.Connections[IDbConnection]"
+                  refId="Package\Load Product\Destination DimProduct.Connections[IDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa1]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa1]"
                   description="Administrador de conexiones administrado"
@@ -124,120 +142,120 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ProductSKU]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ProductSKU]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ProductSKU"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductSKU]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductSKU]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductSKU]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductSKU]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ProductName]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ProductName]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ProductName"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductName]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductName]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductName]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ProductCategory]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ProductCategory]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ProductCategory"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductCategory]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductCategory]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductCategory]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductCategory]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ItemGroup]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ItemGroup]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ItemGroup"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ItemGroup]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ItemGroup]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ItemGroup]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ItemGroup]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[RetailPrice]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[RetailPrice]"
                       cachedDataType="cy"
                       cachedName="RetailPrice"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[RetailPrice]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[RetailPrice]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[RetailPrice]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[RetailPrice]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[StartDate]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[StartDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="StartDate"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[StartDate]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[StartDate]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[StartDate]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[StartDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[CurrentFlag]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[CurrentFlag]"
                       cachedDataType="i4"
                       cachedName="CurrentFlag"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[CurrentFlag]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[CurrentFlag]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ProductID]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ProductID]"
                       cachedDataType="i4"
                       cachedName="ProductID"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductID_BK]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductID]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductID_BK]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductID]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ChunkSK]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].Columns[ChunkSK]"
                       cachedDataType="i4"
                       cachedName="ChunkSK"
-                      externalMetadataColumnId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ChunkSK]"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[ChunkSK]" />
+                      externalMetadataColumnId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ChunkSK]"
+                      lineageId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Match Output].Columns[ChunkSK]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductSK]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductSK]"
                       dataType="i4"
                       name="ProductSK" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductID_BK]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductID_BK]"
                       dataType="i4"
                       name="ProductID_BK" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductSKU]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductSKU]"
                       dataType="wstr"
                       length="50"
                       name="ProductSKU" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductName]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductName]"
                       dataType="wstr"
                       length="50"
                       name="ProductName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductCategory]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ProductCategory]"
                       dataType="wstr"
                       length="50"
                       name="ProductCategory" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ItemGroup]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ItemGroup]"
                       dataType="wstr"
                       length="50"
                       name="ItemGroup" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ChunkSK]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[ChunkSK]"
                       dataType="i4"
                       name="ChunkSK" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[RetailPrice]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[RetailPrice]"
                       dataType="numeric"
                       name="RetailPrice"
                       precision="19"
                       scale="255" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[StartDate]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[StartDate]"
                       dataType="dbTimeStamp"
                       name="StartDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[EndDate]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[EndDate]"
                       dataType="dbTimeStamp"
                       name="EndDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[CurrentFlag]"
+                      refId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET].ExternalColumns[CurrentFlag]"
                       dataType="bool"
                       name="CurrentFlag" />
                   </externalMetadataColumns>
@@ -245,22 +263,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\DimProduct.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Load Product\Destination DimProduct.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\DimProduct.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Load Product\Destination DimProduct.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\DimProduct.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Load Product\Destination DimProduct.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\DimProduct.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Load Product\Destination DimProduct.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\DimProduct.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Load Product\Destination DimProduct.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -269,336 +287,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Leer productos"
-              componentClassID="Microsoft.ManagedComponentHost"
-              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
-              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
-              name="Leer productos"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
-ProductID,
-    ISNULL(ProductSKU, 'SKU DESCONOCIDO') AS ProductSKU,
-    ISNULL(ProductName, 'PRODUCTO DESCONOCIDO') AS ProductName,
-    ISNULL(ProductCategory, 'CATEGORIA DESCONOCIDA') AS ProductCategory,
-    ISNULL(ItemGroup, 'GRUPO DESCONOCIDO') AS ItemGroup,
-    ISNULL(KitType, 'N/A') AS KitType,
-    ISNULL(Channels, 0) AS Channels,
-    ISNULL(Demographic, 'N/A') AS Demographic,
-    ISNULL(RetailPrice, 0) AS RetailPrice,
-    Photo,
-    GETDATE() AS StartDate,
-    1 AS CurrentFlag
-FROM dbo.Product;</property>
-                <property
-                  dataType="System.Int32"
-                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
-                  name="CommandTimeout">30</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
-                  name="AllowImplicitStringConversion">true</property>
-                <property
-                  dataType="System.String"
-                  description="Nombre de la tabla de la base de datos de origen."
-                  expressionType="Notify"
-                  name="TableOrViewName"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Especificar el modo de recuperar información de columnas externas"
-                  name="AccessMode"
-                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
-                <property
-                  dataType="System.String"
-                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\Leer productos.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.TailspinToys2020.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.TailspinToys2020.sa]"
-                  description="Administrador de conexiones administrado"
-                  name="IDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET]"
-                  name="Salida de origen de ADO NET">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductID]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductID]"
-                      name="ProductID"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductSKU]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductSKU]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductSKU]"
-                      name="ProductSKU"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductName]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductName]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductName]"
-                      name="ProductName"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductCategory]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductCategory]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ProductCategory]"
-                      name="ProductCategory"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ItemGroup]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ItemGroup]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[ItemGroup]"
-                      name="ItemGroup"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[KitType]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[KitType]"
-                      length="3"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[KitType]"
-                      name="KitType"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[Channels]"
-                      dataType="ui1"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[Channels]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[Channels]"
-                      name="Channels"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[Demographic]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[Demographic]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[Demographic]"
-                      name="Demographic"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[RetailPrice]"
-                      dataType="cy"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[RetailPrice]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[RetailPrice]"
-                      name="RetailPrice"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[Photo]"
-                      dataType="image"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[Photo]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[Photo]"
-                      name="Photo"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
-                      name="StartDate"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[CurrentFlag]"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]"
-                      name="CurrentFlag"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductID]"
-                      dataType="i4"
-                      name="ProductID" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductSKU]"
-                      dataType="wstr"
-                      length="50"
-                      name="ProductSKU" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductName]"
-                      dataType="wstr"
-                      length="50"
-                      name="ProductName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductCategory]"
-                      dataType="wstr"
-                      length="50"
-                      name="ProductCategory" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[ItemGroup]"
-                      dataType="wstr"
-                      length="50"
-                      name="ItemGroup" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[KitType]"
-                      dataType="wstr"
-                      length="3"
-                      name="KitType" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[Channels]"
-                      dataType="ui1"
-                      name="Channels" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[Demographic]"
-                      dataType="wstr"
-                      length="50"
-                      name="Demographic" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[RetailPrice]"
-                      dataType="cy"
-                      name="RetailPrice" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[Photo]"
-                      dataType="image"
-                      name="Photo" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
-                      dataType="dbTimeStamp"
-                      name="StartDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].ExternalColumns[CurrentFlag]"
-                      dataType="i4"
-                      name="CurrentFlag" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET]"
-                  isErrorOut="true"
-                  name="Salida de error de origen de ADO NET">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ProductID]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ProductID]"
-                      name="ProductID" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ProductSKU]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ProductSKU]"
-                      name="ProductSKU" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ProductName]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ProductName]"
-                      name="ProductName" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ProductCategory]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ProductCategory]"
-                      name="ProductCategory" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ItemGroup]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ItemGroup]"
-                      name="ItemGroup" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[KitType]"
-                      dataType="wstr"
-                      length="3"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[KitType]"
-                      name="KitType" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[Channels]"
-                      dataType="ui1"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[Channels]"
-                      name="Channels" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[Demographic]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[Demographic]"
-                      name="Demographic" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[RetailPrice]"
-                      dataType="cy"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[RetailPrice]"
-                      name="RetailPrice" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[Photo]"
-                      dataType="image"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[Photo]"
-                      name="Photo" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
-                      name="StartDate" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[CurrentFlag]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[CurrentFlag]"
-                      name="CurrentFlag" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Lookup"
+              refId="Package\Load Product\Lookup DimChunk"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup"
+              name="Lookup DimChunk"
               usesDispositions="true"
               version="6">
               <properties>
@@ -650,7 +343,7 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[KitType]};#{Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[Channels]};</property>
+                  name="ParameterMap">#{Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[KitType]};#{Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[Channels]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -662,7 +355,7 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Lookup.Connections[OleDbConnection]"
+                  refId="Package\Load Product\Lookup DimChunk.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa]"
                   description="Connection manager used to access lookup data."
@@ -670,15 +363,15 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
+                  refId="Package\Load Product\Lookup DimChunk.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[KitType]"
+                      refId="Package\Load Product\Lookup DimChunk.Inputs[Lookup Input].Columns[KitType]"
                       cachedDataType="wstr"
                       cachedLength="3"
                       cachedName="KitType"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[KitType]">
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[KitType]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -691,10 +384,10 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Channels]"
+                      refId="Package\Load Product\Lookup DimChunk.Inputs[Lookup Input].Columns[Channels]"
                       cachedDataType="ui1"
                       cachedName="Channels"
-                      lineageId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET].Columns[Channels]">
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[Channels]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -712,18 +405,18 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]"
+                  refId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load Product\Lookup DimChunk.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[ChunkSK]"
+                      refId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Match Output].Columns[ChunkSK]"
                       dataType="i4"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[ChunkSK]"
+                      lineageId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Match Output].Columns[ChunkSK]"
                       name="ChunkSK"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -737,30 +430,355 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup No Match Output]"
+                  refId="Package\Load Product\Lookup DimChunk.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load Product\Lookup DimChunk.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output]"
+                  refId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load Product\Lookup DimChunk.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Product\Source Product"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Source Product"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
+ProductID,
+    ISNULL(ProductSKU, 'SKU DESCONOCIDO') AS ProductSKU,
+    ISNULL(ProductName, 'PRODUCTO DESCONOCIDO') AS ProductName,
+    ISNULL(ProductCategory, 'CATEGORIA DESCONOCIDA') AS ProductCategory,
+    ISNULL(ItemGroup, 'GRUPO DESCONOCIDO') AS ItemGroup,
+    ISNULL(KitType, 'N/A') AS KitType,
+    ISNULL(Channels, 0) AS Channels,
+    ISNULL(Demographic, 'N/A') AS Demographic,
+    ISNULL(RetailPrice, 0) AS RetailPrice,
+    Photo,
+    GETDATE() AS StartDate,
+    1 AS CurrentFlag
+FROM dbo.Product;</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Product\Source Product.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.TailspinToys2020.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.TailspinToys2020.sa]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductID]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductID]"
+                      name="ProductID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductSKU]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductSKU]"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductSKU]"
+                      name="ProductSKU"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductName]"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductName]"
+                      name="ProductName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductCategory]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductCategory]"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ProductCategory]"
+                      name="ProductCategory"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ItemGroup]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ItemGroup]"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[ItemGroup]"
+                      name="ItemGroup"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[KitType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[KitType]"
+                      length="3"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[KitType]"
+                      name="KitType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[Channels]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[Channels]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[Channels]"
+                      name="Channels"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[Demographic]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[Demographic]"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[Demographic]"
+                      name="Demographic"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[RetailPrice]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[RetailPrice]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[RetailPrice]"
+                      name="RetailPrice"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[Photo]"
+                      dataType="image"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[Photo]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[Photo]"
+                      name="Photo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
+                      name="StartDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[CurrentFlag]"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].Columns[CurrentFlag]"
+                      name="CurrentFlag"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductID]"
+                      dataType="i4"
+                      name="ProductID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductSKU]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductSKU" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ProductCategory]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductCategory" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[ItemGroup]"
+                      dataType="wstr"
+                      length="50"
+                      name="ItemGroup" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[KitType]"
+                      dataType="wstr"
+                      length="3"
+                      name="KitType" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[Channels]"
+                      dataType="ui1"
+                      name="Channels" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[Demographic]"
+                      dataType="wstr"
+                      length="50"
+                      name="Demographic" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[RetailPrice]"
+                      dataType="cy"
+                      name="RetailPrice" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[Photo]"
+                      dataType="image"
+                      name="Photo" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
+                      dataType="dbTimeStamp"
+                      name="StartDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET].ExternalColumns[CurrentFlag]"
+                      dataType="i4"
+                      name="CurrentFlag" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ProductID]"
+                      dataType="i4"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ProductID]"
+                      name="ProductID" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ProductSKU]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ProductSKU]"
+                      name="ProductSKU" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ProductName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ProductName]"
+                      name="ProductName" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ProductCategory]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ProductCategory]"
+                      name="ProductCategory" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ItemGroup]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ItemGroup]"
+                      name="ItemGroup" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[KitType]"
+                      dataType="wstr"
+                      length="3"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[KitType]"
+                      name="KitType" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[Channels]"
+                      dataType="ui1"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[Channels]"
+                      name="Channels" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[Demographic]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[Demographic]"
+                      name="Demographic" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[RetailPrice]"
+                      dataType="cy"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[RetailPrice]"
+                      name="RetailPrice" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[Photo]"
+                      dataType="image"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[Photo]"
+                      name="Photo" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
+                      name="StartDate" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[CurrentFlag]"
+                      dataType="i4"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[CurrentFlag]"
+                      name="CurrentFlag" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Product\Source Product.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -771,35 +789,17 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
-              endId="Package\Data Flow Task\DimProduct.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Load Product.Paths[Lookup Match Output]"
+              endId="Package\Load Product\Destination DimProduct.Inputs[Entrada de destino de ADO NET]"
               name="Lookup Match Output"
-              startId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]" />
+              startId="Package\Load Product\Lookup DimChunk.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
-              endId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
+              refId="Package\Load Product.Paths[Salida de origen de ADO NET]"
+              endId="Package\Load Product\Lookup DimChunk.Inputs[Lookup Input]"
               name="Salida de origen de ADO NET"
-              startId="Package\Data Flow Task\Leer productos.Outputs[Salida de origen de ADO NET]" />
+              startId="Package\Load Product\Source Product.Outputs[Salida de origen de ADO NET]" />
           </paths>
         </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Tarea Ejecutar SQL"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{1EA86F3E-AE17-4D0B-9A24-C882BC4A381E}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Tarea Ejecutar SQL"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{93E4358D-B22A-49C6-9872-606453471614}"
-          SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="delete DimProduct;&#xA;DBCC CHECKIDENT('DimProduct', RESEED, 0);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -808,10 +808,10 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
       DTS:DTSID="{2670BC84-9DEC-4B69-A2AC-359004DEE43F}"
-      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:From="Package\Clear DimProduct"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Load Product" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -826,27 +826,27 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task"
+          Size="140,41.6"
+          Id="Package\Load Product"
           TopLeft="436.666642808253,166.399998842875" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Tarea Ejecutar SQL"
+          Size="160.8,41.6"
+          Id="Package\Clear DimProduct"
           TopLeft="126.666659745906,169.866665485435" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="297.066659745906,188.933332164155">
+          TopLeft="287.466659745906,188.933332164155">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="139.599983062347,0"
+              EndConnector="149.199983062347,0"
               Start="0,0"
-              End="132.099983062347,0">
+              End="141.699983062347,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="132.099983062347,0" />
+                    End="141.699983062347,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -859,48 +859,36 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Load Product">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="148,41.6"
-          Id="Package\Data Flow Task\Leer productos"
-          TopLeft="142.000001194576,21.8333338456021" />
+          Size="149.6,41.6"
+          Id="Package\Load Product\Source Product"
+          TopLeft="267.833327652679,28.7666671307219" />
         <NodeLayout
-          Size="132.8,41.6"
-          Id="Package\Data Flow Task\DimProduct"
-          TopLeft="296.333317442901,274.166664798392" />
+          Size="164,41.6"
+          Id="Package\Load Product\Lookup DimChunk"
+          TopLeft="259.666652779613,146.766665684315" />
         <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Data Flow Task\Lookup"
-          TopLeft="211.333322087096,127.699999150236" />
+          Size="188,42.4"
+          Id="Package\Load Product\Destination DimProduct"
+          TopLeft="247.166653462582,272.433331477112" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
-          TopLeft="216.000001194576,63.4333338456021">
+          Id="Package\Load Product.Paths[Salida de origen de ADO NET]"
+          TopLeft="342.149990216146,70.3666671307219">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="51.7333208925204,64.2666653046344"
+              EndConnector="0,76.3999985535935"
               Start="0,0"
-              End="51.7333208925204,56.7666653046344">
+              End="0,68.8999985535935">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.1333326523172" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.1333326523172"
-                    Point2="0,32.1333326523172"
-                    Point3="4,32.1333326523172" />
-                  <mssgle:LineSegment
-                    End="47.7333208925204,32.1333326523172" />
-                  <mssgle:CubicBezierSegment
-                    Point1="47.7333208925204,32.1333326523172"
-                    Point2="51.7333208925204,32.1333326523172"
-                    Point3="51.7333208925204,36.1333326523172" />
-                  <mssgle:LineSegment
-                    End="51.7333208925204,56.7666653046344" />
+                    End="0,68.8999985535935" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -910,38 +898,26 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
-          TopLeft="267.733322087096,169.299999150236">
+          Id="Package\Load Product.Paths[Lookup Match Output]"
+          TopLeft="341.416653121098,188.366665684315">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="94.9999953558046,104.866665648156"
+              EndConnector="0,84.0666657927966"
               Start="0,0"
-              End="94.9999953558046,97.3666656481555">
+              End="0,76.5666657927966">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.4333328240778" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,48.4333328240778"
-                    Point2="0,52.4333328240778"
-                    Point3="4,52.4333328240778" />
-                  <mssgle:LineSegment
-                    End="90.9999953558046,52.4333328240778" />
-                  <mssgle:CubicBezierSegment
-                    Point1="90.9999953558046,52.4333328240778"
-                    Point2="94.9999953558046,52.4333328240778"
-                    Point3="94.9999953558046,56.4333328240778" />
-                  <mssgle:LineSegment
-                    End="94.9999953558046,97.3666656481555" />
+                    End="0,76.5666657927966" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-0.691389040847689,57.4333328240778,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,32.4786453963983,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -949,28 +925,12 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Leer productos">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\DimProduct">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup">
+    design-time-name="Package\Load Product\Lookup DimChunk">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -980,8 +940,24 @@ where [refTable].[KitType] = ? and [refTable].[Channels] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Product\Source Product">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Product\Destination DimProduct">
+    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>

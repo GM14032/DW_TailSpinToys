@@ -11,11 +11,28 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{39000EEF-3F8E-40E5-A4D7-6A1B53207301}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{372A0A35-E71B-400E-923F-04C00D4862EC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{35C3DAAD-2601-40AD-B017-31F85027371D}"
+      DTS:ObjectName="localhost.DW_TailSpinToys.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=DW_TailSpinToys;Provider=MSOLEDBSQL.1;Application Name=SSIS-Package1-{35C3DAAD-2601-40AD-B017-31F85027371D}localhost.DW_TailSpinToys.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADT/cTyryEQwxiurpkfXZDtjHHwq1kYvYWsq/tUPe9p8gAAAAAOgAAAAAIAACAAAABBM1/lYsj+Tfhdz6F3cbfXtYZtUrOxxODIx9EMN6yvEiAAAACNRFg1Wbv6+DmXhSmyrGdGC2FPA3vNon6ha7CADMem7kAAAADiKEbAF4L/XjiXELzSXNOHEUyMcueUI/EaUNR3nOHBNda15ayOZqDYQzS3oFgGIBs/zp256sf7YLX7ZqLHdQHq</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa1]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
@@ -27,7 +44,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADtRN2+BYtHSylnZxgFYtwXwVqVKJeq+mt61BlyH7ulJAAAAAAOgAAAAAIAACAAAABG9z/qZ+cb3kxXEpRFdyIFoSEqVQhOHcjFDSxSLG+S8CAAAAAfrUCpDXD8MDFkdH96rKyE8DHBYRD/KT13CFf/JHqhIEAAAABvPMdB7+gBmOmlCNvvPk8+D4VmOMsBpv1T/B0pr2H3BuSfcgyAXNUkVq3vofCmXhV2v/Aq3UvPFpytQ/lUyYJp</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAdej0HAX6z3BQ80mI6EWyEind/l1MzKJ7r+DKCC1T4ewAAAAAOgAAAAAIAACAAAACQccQXKHJiD3pQ+0mpIsw3IRGMXIE0kxbUJpNldIYa/yAAAABAK8yQX1vdZkmuN2t6NEuRj/SdoFXnb/EVuGJVbPsahUAAAAC+1kz/aKYzFnnkBsUJMbkTThrlSIwYPjgpU/d0KLXD9c6tj+J9Hfwzh6sMTRVcjnprxISYBynBOiImpR9kMX9S</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +59,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAClWVrbQoVQmzMvQ/AYaUKYMK/WOhrwpQO9rbl4re3w0QAAAAAOgAAAAAIAACAAAAAbMiZBlOh9v1BKuoGb/mY9TXV1a65V9Rg1t+JGk7w/tiAAAABftfO+O3zmjf7YCdVkC9D0CVzinkNeXHF7CKPRJNwhqUAAAAAEX0j0YhfvHRbTmoD2ggCvh0RLv5FJ6e8qfVkKpWmH8vHgxQuoYZBUQouDkIGmNtQRfPULDr5cZLMq8Cdo3cnM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATNM5L/PbvkyS26YdOzwR1gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADdcVTaJpewkek/+lO5UvCfrpPfvdhVrntjtD/Gl5ypjAAAAAAOgAAAAAIAACAAAAAzDpl6ZXpSuTS7mo6vCG8n2trVcuHSV0d6OHIoX7YICSAAAAC7Wb0j8UBsTCnxNRkYx7kg6j9AWGUpUT4r7O7AVMqXn0AAAABU/bjPGKyUHNd/7W6s/LRzGAnfZJ4gmzRtFslEkNZqqTi63EHsrSuAntLlVRSfEkC5+YsJ6GRiYrdmIBUwPsxJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -155,7 +172,7 @@
                       cachedDataType="i4"
                       cachedName="RegionSK"
                       externalMetadataColumnId="Package\Load State\Destination DimState.Inputs[Entrada de destino de ADO NET].ExternalColumns[RegionSK]"
-                      lineageId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].Columns[RegionSK]" />
+                      lineageId="Package\Load State\Lookup DimRegion.Outputs[Lookup Match Output].Columns[RegionSK]" />
                     <inputColumn
                       refId="Package\Load State\Destination DimState.Inputs[Entrada de destino de ADO NET].Columns[StartDate]"
                       cachedDataType="dbTimeStamp"
@@ -245,6 +262,164 @@
               </outputs>
             </component>
             <component
+              refId="Package\Load State\Lookup DimRegion"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup DimRegion"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimRegion]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimRegion]) [refTable]
+where [refTable].[RegionID_BK] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="RegionSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RegionID_BK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RegionName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StartDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EndDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentFlag" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load State\Source State.Outputs[Salida de origen de ADO NET].Columns[RegionId]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load State\Lookup DimRegion.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DW_TailSpinToys.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load State\Lookup DimRegion.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load State\Lookup DimRegion.Inputs[Lookup Input].Columns[RegionId]"
+                      cachedDataType="i4"
+                      cachedName="RegionId"
+                      lineageId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].Columns[RegionId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">RegionID_BK</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load State\Lookup DimRegion.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load State\Lookup DimRegion.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load State\Lookup DimRegion.Outputs[Lookup Match Output].Columns[RegionSK]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Load State\Lookup DimRegion.Outputs[Lookup Match Output].Columns[RegionSK]"
+                      name="RegionSK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">RegionSK</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load State\Lookup DimRegion.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load State\Lookup DimRegion.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load State\Lookup DimRegion.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load State\Lookup DimRegion.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load State\Lookup DimRegion.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load State\Lookup DimRegion.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load State\Lookup DimRegion.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load State\Lookup DimRegion.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Load State\Source State"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
@@ -259,17 +434,15 @@
                   expressionType="Notify"
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
-    s.StateID AS StateID_BK,
-    s.StateCode,
-    s.StateName,
-    s.TimeZone,
-    dr.RegionSK,  
+    StateID AS StateID_BK,
+    StateCode,
+    StateName,
+    TimeZone,
+    RegionId,
     GETDATE() AS StartDate,
     NULL AS EndDate,
     1 AS CurrentFlag
-FROM TailSpinToys2020.dbo.State s
-INNER JOIN DW_TailSpinToys.dbo.DimRegion dr
-    ON dr.RegionID_BK = s.RegionID;</property>
+FROM State</property>
                 <property
                   dataType="System.Int32"
                   description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
@@ -346,13 +519,13 @@ INNER JOIN DW_TailSpinToys.dbo.DimRegion dr
                       name="TimeZone"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].Columns[RegionSK]"
+                      refId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].Columns[RegionId]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionSK]"
-                      lineageId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].Columns[RegionSK]"
-                      name="RegionSK"
+                      externalMetadataColumnId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionId]"
+                      lineageId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].Columns[RegionId]"
+                      name="RegionId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].Columns[StartDate]"
@@ -404,9 +577,9 @@ INNER JOIN DW_TailSpinToys.dbo.DimRegion dr
                       length="10"
                       name="TimeZone" />
                     <externalMetadataColumn
-                      refId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionSK]"
+                      refId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].ExternalColumns[RegionId]"
                       dataType="i4"
-                      name="RegionSK" />
+                      name="RegionId" />
                     <externalMetadataColumn
                       refId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET].ExternalColumns[StartDate]"
                       dataType="dbTimeStamp"
@@ -450,10 +623,10 @@ INNER JOIN DW_TailSpinToys.dbo.DimRegion dr
                       lineageId="Package\Load State\Source State.Outputs[Salida de error de origen de ADO NET].Columns[TimeZone]"
                       name="TimeZone" />
                     <outputColumn
-                      refId="Package\Load State\Source State.Outputs[Salida de error de origen de ADO NET].Columns[RegionSK]"
+                      refId="Package\Load State\Source State.Outputs[Salida de error de origen de ADO NET].Columns[RegionId]"
                       dataType="i4"
-                      lineageId="Package\Load State\Source State.Outputs[Salida de error de origen de ADO NET].Columns[RegionSK]"
-                      name="RegionSK" />
+                      lineageId="Package\Load State\Source State.Outputs[Salida de error de origen de ADO NET].Columns[RegionId]"
+                      name="RegionId" />
                     <outputColumn
                       refId="Package\Load State\Source State.Outputs[Salida de error de origen de ADO NET].Columns[StartDate]"
                       dataType="dbTimeStamp"
@@ -489,8 +662,13 @@ INNER JOIN DW_TailSpinToys.dbo.DimRegion dr
           </components>
           <paths>
             <path
-              refId="Package\Load State.Paths[Salida de origen de ADO NET]"
+              refId="Package\Load State.Paths[Lookup Match Output]"
               endId="Package\Load State\Destination DimState.Inputs[Entrada de destino de ADO NET]"
+              name="Lookup Match Output"
+              startId="Package\Load State\Lookup DimRegion.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Load State.Paths[Salida de origen de ADO NET]"
+              endId="Package\Load State\Lookup DimRegion.Inputs[Lookup Input]"
               name="Salida de origen de ADO NET"
               startId="Package\Load State\Source State.Outputs[Salida de origen de ADO NET]" />
           </paths>
@@ -521,13 +699,13 @@ INNER JOIN DW_TailSpinToys.dbo.DimRegion dr
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="128.8,41.6"
-          Id="Package\Load State"
-          TopLeft="337.166650184327,94.4333329235183" />
-        <NodeLayout
           Size="148.8,41.6"
           Id="Package\Clear DimState"
           TopLeft="37.1666649364763,95.6333327065574" />
+        <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\Load State"
+          TopLeft="337.166650184327,94.4333329235183" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="185.966664936476,115.833332815038">
@@ -557,35 +735,63 @@ INNER JOIN DW_TailSpinToys.dbo.DimRegion dr
     design-time-name="Package\Load State">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="176,41.6"
           Id="Package\Load State\Destination DimState"
-          TopLeft="383.833312662112,84.3666661182377" />
+          TopLeft="237.166654008958,222.166665159994" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Load State\Source State"
-          TopLeft="65.4999983608723,90.0999996203185" />
+          TopLeft="261.333320994344,12.9666668233607" />
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Load State\Lookup DimRegion"
+          TopLeft="248.833320038187,108.633332616157" />
         <EdgeLayout
           Id="Package\Load State.Paths[Salida de origen de ADO NET]"
-          TopLeft="203.899998360872,108.033332869278">
+          TopLeft="331.483320516266,54.5666668233607">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="179.93331430124,0"
+              EndConnector="0,54.0666657927963"
               Start="0,0"
-              End="172.43331430124,0">
+              End="0,46.5666657927963">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="172.43331430124,0" />
+                    End="0,46.5666657927963" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load State.Paths[Lookup Match Output]"
+          TopLeft="328.799987023573,150.233332616157">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.9333325438366"
+              Start="0,0"
+              End="0,64.4333325438366">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.4333325438366" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,26.4119787719183,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -602,6 +808,29 @@ INNER JOIN DW_TailSpinToys.dbo.DimRegion dr
   <PipelineComponentMetadata
     design-time-name="Package\Load State\Source State">
     <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load State\Lookup DimRegion">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimRegion]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
